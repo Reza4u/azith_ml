@@ -1,0 +1,12 @@
+"Pre-admission regimen","Failure","Success","Total","Failure rate (%)"
+"Ciprofloxacin + Cefuroxime",1,0,1,100
+"Ciprofloxacin + Erythromycin",1,0,1,100
+"Erythromycin",1,0,1,100
+"Ciprofloxacin + Metronidazole",22,13,35,62.9
+"Cefixime + Metronidazole",1,1,2,50
+"Ciprofloxacin",40,41,81,49.4
+"No Antibiotic",38,74,112,33.9
+"Metronidazole",27,58,85,31.8
+"Cefixime",1,8,9,11.1
+"Cefixime + Amoxicillin",0,1,1,0
+"Ciprofloxacin + Amoxicillin",0,1,1,0

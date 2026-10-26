@@ -1,0 +1,6 @@
+"Category","Failure","Success","Total","Failure rate (%)"
+"None",38,74,112,33.9
+"Ciprofloxacin",40,41,81,49.4
+"Metronidazole",27,58,85,31.8
+"Ciprofloxacin + metronidazole",22,13,35,62.9
+"Other",5,11,16,31.2

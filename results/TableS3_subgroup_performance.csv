@@ -1,0 +1,15 @@
+"Domain","Subgroup","n","Events","AUROC (95% CI)","Calibration slope","Brier score","Sensitivity","Specificity"
+"Overall","All participants",329,132,"0.71 (0.66-0.76)",1.02,0.208,0.61,0.69
+"Sex","Male",176,68,"0.75 (0.69-0.81)",1.25,0.196,0.68,0.72
+"Sex","Female",153,64,"0.67 (0.59-0.74)",0.81,0.222,0.53,0.65
+"Age band","24-35 months",149,55,"0.70 (0.62-0.77)",0.9,0.209,0.61,0.68
+"Age band","36-47 months",109,45,"0.72 (0.64-0.80)",1.12,0.206,0.59,0.7
+"Age band","48-59 months",71,32,"0.73 (0.63-0.83)",1.13,0.208,0.64,0.68
+"Residence","Urban",264,92,"0.66 (0.61-0.72)",0.8,0.212,0.51,0.7
+"Residence","Rural",65,40,"0.80 (0.69-0.89)",1.53,0.188,0.83,0.6
+"Nutritional status","Stunted (HAZ < -2)",46,23,"0.75 (0.62-0.87)",1.27,0.206,0.75,0.58
+"Nutritional status","Not stunted",283,109,"0.70 (0.65-0.75)",0.97,0.208,0.58,0.7
+"Nutritional status","Underweight (WAZ < -2)",96,36,"0.68 (0.59-0.78)",0.9,0.212,0.64,0.61
+"Nutritional status","Not underweight",233,96,"0.73 (0.67-0.78)",1.1,0.206,0.6,0.72
+"Nutritional status","Wasted (WHZ < -2)",78,33,"0.67 (0.57-0.77)",0.88,0.222,0.64,0.63
+"Nutritional status","Not wasted",251,99,"0.72 (0.66-0.77)",1.07,0.203,0.6,0.7

@@ -1,0 +1,47 @@
+flowchart TD
+    A["<b>1. Analytic dataset</b><br/>n = 329 children · 132 failures<br/>23 candidate variables"]
+    R["<b>2. Repeated outer loop</b><br/>10 repeats (seeds 223 … 1123) × stratified 5-fold split"]
+    A --> R
+
+    subgraph TP ["<b>Inside each outer training partition (4 folds, ~80%)</b>"]
+        direction TD
+        C["Training folds"]
+        F1["LASSO"]
+        F2["Elastic Net"]
+        F3["Mutual information<br/>(top quartile)"]
+        C --> F1 & F2 & F3
+        U["<b>3. Feature selection</b><br/>Union of the three, then VIF &lt; 5"]
+        F1 & F2 & F3 --> U
+        E["<b>4. Pre-processing recipe</b><br/>zero-variance · dummy encoding ·<br/>near-zero-variance · centre &amp; scale"]
+        U --> E
+        G["<b>5. Inner loop: 10-fold CV</b><br/>Fixed hyperparameter grids<br/>8 algorithms, tuned on AUROC"]
+        E --> G
+        H["<b>6. Refit</b> best configuration<br/>on the training folds"]
+        G --> H
+    end
+
+    R --> C
+    D["Held-out fold (~20%)<br/>never used for feature selection,<br/>pre-processing or tuning"]
+    R --> D
+    I["<b>7. Out-of-fold predictions</b><br/>every child predicted once per repeat"]
+    H --> I
+    D -.-> I
+
+    I --> M["<b>8. Performance per repeat</b><br/>AUROC · calibration · Brier · net benefit<br/>→ mean across 10 repeats, bootstrap 95% CI<br/>Threshold = median Youden's J"]
+    I --> S["<b>9. Final predictor set</b><br/>variables selected in ≥ 50% of the<br/>50 outer-fold selections (step 3)"]
+    M --> K["<b>10. Pre-specified selection rule</b><br/>rank by mean AUROC → paired bootstrap vs leader<br/>→ Hosmer–Lemeshow p &gt; 0.05 → slope closest to 1<br/>→ tie-break: net benefit at 30–40%"]
+    K --> Z["<b>11. Final model</b><br/>refitted on all 329 children with the final predictor set<br/>(5-fold tuning) · SHAP interpretation"]
+    S --> Z
+
+    classDef main fill:#ffffff,stroke:#1f497d,stroke-width:2px,color:#000000;
+    classDef split fill:#fcfcfc,stroke:#1f497d,stroke-width:2.5px,color:#000000;
+    classDef test fill:#e6eff8,stroke:#1f497d,stroke-width:2px,color:#000000,stroke-dasharray: 5 5;
+    classDef fs fill:#f2f6fa,stroke:#4f81bd,stroke-width:1.5px,color:#000000;
+    classDef highlight fill:#1f497d,stroke:#1f497d,stroke-width:2px,color:#ffffff;
+    class A,C,U,E,G,H,I,M,S,K main;
+    class R split;
+    class D test;
+    class F1,F2,F3 fs;
+    class Z highlight;
+    style TP fill:#fafcff,stroke:#1f497d,stroke-width:1.5px,stroke-dasharray: 4 4
+    linkStyle default stroke:#1f497d,stroke-width:2px

@@ -1,0 +1,21 @@
+flowchart TD
+    A["`<b>`Assessed for eligibility`</b><br>`(n = 355)"]
+    B["`<b>`Excluded (n = 26)`</b><br>`• Consent withdrawal (n = 22)`<br>`• Referral to general ward (n = 3)`<br>`• Referral to outside hospital (n = 1)"]
+    C["`<b>`Analytic Cohort`</b><br>`(n = 329)"]
+
+    A -->|Exclusions| B
+    A --> C
+
+    D["`<b>`Outcome: Treatment Failure`</b><br>`(n = 132, 40.1%)"]
+    E["`<b>`Outcome: Treatment Success`</b><br>`(n = 197, 59.9%)"]
+
+    C --> D
+    C --> E
+
+    classDef mainNode fill:#ffffff,stroke:#1f497d,stroke-width:2.5px,color:#000000;
+    classDef exclNode fill:#e6eff8,stroke:#1f497d,stroke-width:2px,color:#000000,stroke-dasharray: 5 5;
+    classDef outNode fill:#1f497d,stroke:#1f497d,stroke-width:2px,color:#ffffff;
+
+    class A,C mainNode;
+    class B exclNode;
+    class D,E outNode;

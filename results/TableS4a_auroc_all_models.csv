@@ -1,0 +1,9 @@
+"Model","Mean AUROC (95% CI)","SD across repeats","Range across repeats","Repeats ranked first"
+"Elastic Net","0.720 (0.665-0.772)",0.012,"0.698-0.734",4
+"XGBoost","0.716 (0.669-0.761)",0.011,"0.702-0.736",2
+"Support vector machine","0.711 (0.659-0.761)",0.02,"0.688-0.745",2
+"Random Forest (final model)","0.711 (0.660-0.759)",0.014,"0.682-0.731",1
+"Neural network","0.699 (0.653-0.743)",0.019,"0.667-0.733",1
+"Naïve Bayes","0.687 (0.636-0.736)",0.019,"0.665-0.721",0
+"k-nearest neighbours","0.687 (0.635-0.734)",0.015,"0.666-0.721",0
+"Decision tree","0.676 (0.631-0.720)",0.018,"0.644-0.697",0

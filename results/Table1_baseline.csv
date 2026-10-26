@@ -1,0 +1,39 @@
+"variable","row_type","Variable","Overall (n=329)","Failure","Success","p value"
+"age","label","Age, months","38.4 (10.2)","38.7 (10.7)","38.1 (9.8)","0.783"
+"sex","label","Sex, male","176 (53.5%)","68 (51.5%)","108 (54.8%)","0.556"
+"resident_area","label","Residence, urban","264 (80.2%)","92 (69.7%)","172 (87.3%)","<0.001"
+"diarrhea_dur","label","Diarrhoea duration, days","2.8 (2.0)","3.0 (1.9)","2.6 (2.0)","0.001"
+"fever","label","Fever","176 (53.5%)","69 (52.3%)","107 (54.3%)","0.716"
+"cough","label","Cough","60 (18.2%)","21 (15.9%)","39 (19.8%)","0.371"
+"resp_rate","label","Respiratory rate","30.6 (3.2)","30.4 (2.9)","30.7 (3.4)","0.587"
+"straining","label","Straining/tenesmus","127 (38.6%)","61 (46.2%)","66 (33.5%)","0.020"
+"haz","label","Height-for-age Z-score","-0.9 (1.1)","-1.0 (0.9)","-0.8 (1.1)","0.145"
+"waz","label","Weight-for-age Z-score","-1.4 (1.0)","-1.5 (0.9)","-1.3 (1.1)","0.283"
+"whz","label","Weight-for-height Z-score","-1.3 (0.9)","-1.3 (0.9)","-1.3 (1.0)","0.809"
+"consist_RE","label","Stool consistency",NA,NA,NA,"0.033"
+"consist_RE","level","Formed","101 (30.7%)","30 (22.7%)","71 (36.0%)",NA
+"consist_RE","level","Mucoid","130 (39.5%)","60 (45.5%)","70 (35.5%)",NA
+"consist_RE","level","Liquid","98 (29.8%)","42 (31.8%)","56 (28.4%)",NA
+"blood_RE","label","Blood in stool",NA,NA,NA,"<0.001"
+"blood_RE","level","Absent","72 (21.9%)","27 (20.5%)","45 (22.8%)",NA
+"blood_RE","level","Small","237 (72.0%)","85 (64.4%)","152 (77.2%)",NA
+"blood_RE","level","Moderate","12 (3.6%)","12 (9.1%)","0 (0.0%)",NA
+"blood_RE","level","Plenty","8 (2.4%)","8 (6.1%)","0 (0.0%)",NA
+"mucus_RE","label","Mucus in stool",NA,NA,NA,"<0.001"
+"mucus_RE","level","Small","22 (6.7%)","20 (15.2%)","2 (1.0%)",NA
+"mucus_RE","level","Moderate","178 (54.1%)","58 (43.9%)","120 (60.9%)",NA
+"mucus_RE","level","Plenty","129 (39.2%)","54 (40.9%)","75 (38.1%)",NA
+"abx_cat","label","Pre-admission antibiotic use",NA,NA,NA,"0.005"
+"abx_cat","level","None","112 (34.0%)","38 (28.8%)","74 (37.6%)",NA
+"abx_cat","level","Ciprofloxacin","81 (24.6%)","40 (30.3%)","41 (20.8%)",NA
+"abx_cat","level","Metronidazole","85 (25.8%)","27 (20.5%)","58 (29.4%)",NA
+"abx_cat","level","Ciprofloxacin + metronidazole","35 (10.6%)","22 (16.7%)","13 (6.6%)",NA
+"abx_cat","level","Other","16 (4.9%)","5 (3.8%)","11 (5.6%)",NA
+"wbc_numeric","label","Stool white-cell count","12.0 (5.4)","11.7 (4.6)","12.2 (5.9)","0.856"
+"pcell_numeric","label","Stool pus-cell count","31.0 (8.1)","31.6 (7.1)","30.6 (8.7)","0.379"
+"rbc_numeric","label","Stool red-cell count","28.8 (10.1)","29.5 (9.5)","28.3 (10.5)","0.261"
+"is_green","label","Stool colour: green","173 (52.6%)","76 (57.6%)","97 (49.2%)","0.138"
+"is_red","label","Stool colour: red/bloody","118 (35.9%)","49 (37.1%)","69 (35.0%)","0.698"
+"is_yellow","label","Stool colour: yellow","113 (34.3%)","37 (28.0%)","76 (38.6%)","0.048"
+"is_brown","label","Stool colour: brown","6 (1.8%)","3 (2.3%)","3 (1.5%)","0.687"
+"macro_grade","label","Faecal macrophages, 2-5 per HPF","199 (60.5%)","56 (42.4%)","143 (72.6%)","<0.001"

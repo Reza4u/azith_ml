@@ -1,0 +1,8 @@
+"Comparison","dAUROC","95% CI","p value"
+"Random Forest vs Elastic Net","-0.009","-0.036 to 0.020","0.528"
+"Random Forest vs XGBoost","-0.005","-0.023 to 0.013","0.617"
+"Random Forest vs Support vector machine","0.000","-0.023 to 0.023","0.991"
+"Random Forest vs Neural network","0.012","-0.011 to 0.035","0.293"
+"Random Forest vs Naïve Bayes","0.024","-0.005 to 0.053","0.102"
+"Random Forest vs k-nearest neighbours","0.025","0.003 to 0.046","0.023"
+"Random Forest vs Decision tree","0.035","0.009 to 0.061","0.008"

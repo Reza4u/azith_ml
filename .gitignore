@@ -1,0 +1,20 @@
+# Participant data must never be committed: only data/README.md is tracked
+data/*
+!data/README.md
+*.xlsx
+*.xls
+*.csv.gz
+*.sav
+*.dta
+
+# Everything the analysis writes (tables, figures, participant-level objects)
+output/
+
+# R / Python / OS clutter
+.Rhistory
+.Rapp.history
+.RData
+.Rproj.user/
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store

@@ -1,0 +1,11 @@
+"Predictor","Mean absolute SHAP"
+"Faecal macrophage grade",0.1617
+"Stool white-cell count",0.0724
+"Residence",0.0456
+"Pre-admission antibiotic category",0.045
+"Age (months)",0.041
+"Diarrhoea duration (days)",0.0319
+"Straining/tenesmus",0.0318
+"Blood in stool",0.0236
+"Mucus in stool",0.0235
+"Stool pus-cell count",0.0124
